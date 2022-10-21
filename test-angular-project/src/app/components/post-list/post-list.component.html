@@ -1,1 +1,7 @@
-<p>post-list works!</p>
+<div class="columns">
+    <div class="column scoller all">
+        <div class="box" *ngFor="let post of postList">
+            <app-post [post]="post"></app-post>
+        </div>
+    </div>
+</div>

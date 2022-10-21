@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { PostComponent } from './components/post/post.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { UserListComponent } from './components/user-list/user-list.component';
     FooterComponent,
     MainPageComponent,
     PostListComponent,
-    UserListComponent
+    UserListComponent,
+    PostComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
