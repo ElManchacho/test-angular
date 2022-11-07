@@ -1,7 +1,9 @@
-<div class="columns">
-    <div class="column scoller all">
-        <div class="box" *ngFor="let post of postList">
-            <app-post [post]="post"></app-post>
+<div class="column-style">
+    <div class="columns">
+        <div class="column scoller all">
+            <div *ngFor="let post of postList">
+                <app-post [post]="post"></app-post>
+            </div>
         </div>
     </div>
 </div>
