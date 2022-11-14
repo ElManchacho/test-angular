@@ -1,3 +1,14 @@
 .custom-bg{
     background-color: aqua;
 }
+
+.main-content{
+    margin-top: 5%;
+}
+
+.separatorList{
+    width: 100%;
+    tr td:last-child{
+        white-space: nowrap;
+    }
+}
