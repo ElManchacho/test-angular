@@ -10,6 +10,7 @@ import { PostListComponent } from './components/post-list/post-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { PostComponent } from './components/post/post.component';
 import { UserComponent } from './components/user/user.component';
+import { ParallaxDirective } from './directive/parallax/parallax.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UserComponent } from './components/user/user.component';
     PostListComponent,
     UserListComponent,
     PostComponent,
-    UserComponent
+    UserComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,
