@@ -1,0 +1,48 @@
+.box{
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.main-infos{
+    margin-bottom: 0.5%;
+}
+
+.post-title{
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+}
+
+.post-separator{
+    background-color:rgb(139, 138, 138);
+    border:none;
+    height: 1px;
+    margin-bottom:0px;
+}
+
+.table-infos{
+    margin-top: 0px;
+    width:100%
+}
+
+.post-main{
+    text-align:start;
+}
+
+.post-creator{
+    font-size: 20px;
+    color: rgb(173, 168, 168);
+    text-align: left;
+    vertical-align: top;
+}
+
+.post-date{
+    font-size: small;
+    text-align: end;
+    vertical-align: top;
+}
+
+.post-desc{
+    margin-top: 2%;
+    font-size: large;
+}

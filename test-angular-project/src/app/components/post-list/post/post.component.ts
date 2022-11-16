@@ -21,6 +21,9 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (this.post.text.length>100){
+      this.post.text = this.post.text.slice(0, 100)+'...'
+    }
     this.getCreatorPromise = this.userService.getUserById(this.post.idCreator)
     this.getCreatorPromise.then((value) => {
       this.creator= value

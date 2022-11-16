@@ -6,4 +6,5 @@ export const routes = {
     getUserByPseudoRoute: environment.apiUrl + '/userPseudo/', // requires a user pseudo parameter
     getUserByIdRoute: environment.apiUrl + '/user/', // requires a user ID parameter
     getPostRoute: environment.apiUrl + '/post/', // requires a post id parameter
+    swaggerRoute:environment.apiUrl+'/docs', // link to API Swagger documentation
 }

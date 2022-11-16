@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { routes } from 'src/environments/apiRoutes';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  swaggerRoute:any
+
+  constructor() {
+    this.swaggerRoute = routes.swaggerRoute
+   }
 
   ngOnInit(): void {
   }
