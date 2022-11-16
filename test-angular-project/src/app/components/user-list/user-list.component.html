@@ -1,7 +1,10 @@
 <form class="example-form" [formGroup]="postForm" (ngSubmit)="onSubmit()">
     <mat-label>Search a pseudo ...</mat-label>
     <br />
-    <input cklass="field" type="text" placeholder="ex : mary123" formControlName="pseudo">
+    <input cklass="field" list="pseudos" type="text" placeholder="ex : mary123" formControlName="pseudo">
+    <datalist id="pseudos">
+        <option *ngFor="let pseudo of userPseudosList" id="pseudo" value="{{pseudo}}">
+    </datalist>
     <button type="submit" id="submit" class="button is-link" [disabled]="postForm.invalid">Search</button>
 </form>
 

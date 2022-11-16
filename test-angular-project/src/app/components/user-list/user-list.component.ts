@@ -17,23 +17,23 @@ export class UserListComponent implements OnInit {
     pseudo: new FormControl("", Validators.required)
   });
 
-  getUserPromise:Promise<string[]> | undefined
+  getUsersPseudoPromise:Promise<string[]> | undefined
 
   constructor(private userService:UserService) {
     this.userPseudosList = []
   }
 
   ngOnInit(): void {
-    this.getUserPromise = this.userService.getUsersPseudos()
+    this.getUsersPseudoPromise = this.userService.getUsersPseudos()
 
-    this.getUserPromise.then((value)=>{
+    this.getUsersPseudoPromise.then((value)=>{
       this.userPseudosList = value
     })
   }
 
   onSubmit(){
     const searchPseudo:string = this.postForm.get("pseudo")?.value
-    const searchUser = this.userService.getUser(searchPseudo)
+    const searchUser = this.userService.getUserByPseudo(searchPseudo)
     searchUser.then((value)=>{
       this.searchedUser = value
     })
