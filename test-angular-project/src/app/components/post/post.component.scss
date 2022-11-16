@@ -1,8 +1,8 @@
 .box{
-    background-color:teal;
+    //background-color:teal;
     border-radius: 10px;
-    margin-bottom: 2%;
-    color: thistle;
+    margin-bottom: 5%;
+    //color: thistle;
 }
 
 .main-infos{
@@ -11,17 +11,30 @@
 
 .post-date{
     font-size: small;
+    text-align: left;
 }
 
 .post-title{
     font-weight: bolder;
     font-size: x-large;
+    text-align: center;
 }
 
-.additional-infos{
+.post-creator{
+    font-size: smaller;
+    color: rgb(173, 168, 168);
+}
+
+.post-desc{
     margin-bottom: 0.75%;
 }
 
 .post-text{
     font-weight: lighter;
+}
+
+.post-separator{
+    background-color:black;
+    border:none;
+    height: 1px
 }

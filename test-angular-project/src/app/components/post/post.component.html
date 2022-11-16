@@ -1,12 +1,19 @@
 <div class="box">
 
     <div class="main-infos">
-
-        <a class="post-date">{{post.creationDate}}</a> &nbsp; <a class="post-title">{{post.title}}</a>
+        <div class="post-title">
+            <a>{{post.title}}</a><a style="font-size: x-small;color: rgb(173, 168, 168);"> by </a><a class="post-creator">{{creator.pseudo}}</a>
+        </div>
+        
+        <hr class="post-separator"/>
+        <div class="post-date">
+            <a>{{post.creationDate}}</a>
+        </div>
+        
 
     </div>
 
-    <div class="additional-infos">
+    <div class="post-desc">
 
         <a class="post-text">{{post.text}}</a>
 
