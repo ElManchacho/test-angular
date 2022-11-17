@@ -1,6 +1,35 @@
 <div class="box">
 
     <div class="main-infos">
+        <table class="table-infos">
+            <tr class="post-title">
+                <td colspan="2">
+                    <a>{{post.title}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+                    <hr class="post-separator" />
+                </td>
+            </tr>
+            <tr>
+                <td class="post-main">
+                    <a style="font-size: x-small;color: rgb(173, 168, 168);vertical-align: top;"> by </a><a
+                        class="post-creator">{{creator.pseudo}}</a>
+                </td>
+                <td right class="post-date">
+                    <a>{{post.creationDate}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="post-desc" colspan="2">
+                    <a>{{post.text}}</a>
+                </td>
+            </tr>
+        </table>
+
+        <!--
         <div class="post-title">
             <a>{{post.title}}</a>
         </div>
@@ -18,7 +47,7 @@
             <a>{{post.text}}</a>
         </div>
         
-
+        -->
     </div>
-    
+
 </div>

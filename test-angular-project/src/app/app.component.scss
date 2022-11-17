@@ -1,23 +1,23 @@
 #content{
     overflow: hidden;
     font-size: 1.5rem;
-    padding-top: 3%;
-    padding-bottom: 5%;
+    padding-top:8%;
+    padding-bottom: 8%;    
 }
+
 #container{
     width: 100%;
 }
 
-#headerparallax{
+#header{
     position: fixed;
-    z-index: 1;
     top: 0%; 
     left: 0%;
     width: 100%;
     height: auto;
 }
 
-#footerparallax{
+#footer{
     position: fixed;
     bottom: 0%;
     left: 0%;

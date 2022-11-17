@@ -12,7 +12,6 @@ import { PostListComponent } from './components/post-list/post-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserComponent } from './components/user/user.component';
 import { PostComponent } from './components/post-list/post/post.component';
-import { ParallaxDirective } from './directive/parallax/parallax.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -30,7 +29,6 @@ import { PackagesPageComponent } from './packages-page/packages-page.component';
     UserListComponent,
     UserComponent,
     PostComponent,
-    ParallaxDirective,
     PageNotFoundComponent,
     PostCardComponent,
     CreditsPageComponent,
