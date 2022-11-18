@@ -13,3 +13,5 @@ Goes with following API : https://github.com/ElManchacho/fastify-test.git
 - Fixed header and footer
 
 - Services instanciation for API calls, routes staged in environement file
+
+- Import et ustilisation d'une librairie pour le front (Bulma)
