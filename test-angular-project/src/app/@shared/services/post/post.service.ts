@@ -22,6 +22,20 @@ export class PostService {
     }
 
     return ((await response.json()) as PostList).posts;
-  
-}
+  }
+
+  async getPostById(id:string):Promise<Post> {
+    const response = await fetch(routes.getPostRoute+`${id}`, {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error! status: ${response.status}`);
+    }
+
+    return ((await response.json()) as Post);
+  }
 }

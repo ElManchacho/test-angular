@@ -12,6 +12,10 @@
     font-size: x-large;
     text-align: center;
     width: 100%;
+    .post-title-style{
+        text-decoration: none;
+        color: rgb(28, 28, 98);
+    }
 }
 
 .post-separator{
@@ -41,9 +45,4 @@
     font-size: small;
     text-align: end;
     vertical-align: top;
-}
-
-.post-desc{
-    margin-top: 2%;
-    font-size: large;
 }

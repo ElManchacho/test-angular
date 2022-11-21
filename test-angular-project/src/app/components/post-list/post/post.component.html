@@ -4,7 +4,7 @@
         <table class="table-infos">
             <tr class="post-title">
                 <td colspan="2">
-                    <a>{{post.title}}</a>
+                    <a class="post-title-style" href="/post/{{post.id}}">{{post.title}}</a>
                 </td>
             </tr>
             <tr>
@@ -20,11 +20,6 @@
                 </td>
                 <td right class="post-date">
                     <a>{{post.creationDate}}</a>
-                </td>
-            </tr>
-            <tr>
-                <td class="post-desc" colspan="2">
-                    <a>{{post.text}}</a>
                 </td>
             </tr>
         </table>
