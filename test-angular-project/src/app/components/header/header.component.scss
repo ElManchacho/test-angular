@@ -1,9 +1,14 @@
 .navbar{
-    background: rgb(92,217,155);
-    background: linear-gradient(90deg, rgba(92,217,155,1) 0%, rgba(222,214,214,1) 85%);
-    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
     padding:1%;
     padding-top: 2%;
+    .end{
+        float: right;
+        width: 200px;
+        .navbar-item{
+            margin-left: 5%;
+        }   
+    }
 }
 
 .navbar-item{
@@ -11,4 +16,6 @@
     color: rgb(106, 104, 104);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-right: 2%;
+    font-size: large;
+    font-weight: bolder;
 }

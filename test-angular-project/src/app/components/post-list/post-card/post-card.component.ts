@@ -4,11 +4,11 @@ import { Post } from 'src/app/class/post';
 import { User } from 'src/app/class/user';
 
 @Component({
-  selector: 'app-post',
-  templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  selector: 'app-post-card',
+  templateUrl: './post-card.component.html',
+  styleUrls: ['./post-card.component.scss']
 })
-export class PostComponent implements OnInit {
+export class PostCardComponent implements OnInit {
 
   @Input() post!: Post;
 
@@ -29,4 +29,5 @@ export class PostComponent implements OnInit {
       this.creator= value
     })
   }
+
 }

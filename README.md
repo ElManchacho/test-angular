@@ -6,7 +6,11 @@ Goes with following API : https://github.com/ElManchacho/fastify-test.git
 
 #### The said basics seen in this project are :
 
-- Components usage, invoked multiple times, with useful commands such as ```*ngFor``` & ```*ngIf```
+- Components usage, invoked multiple times
+
+- Usage of ```*ngFor``` & ```*ngIf```
+
+- Usage of ```@Input``` for a child component
 
 - Routing
 

@@ -11,13 +11,13 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserComponent } from './components/user/user.component';
-import { PostComponent } from './components/post-list/post/post.component';
+import { PostComponent } from './components/post/post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PostCardComponent } from './post-card/post-card.component';
-import { CreditsPageComponent } from './credits-page/credits-page.component';
-import { PackagesPageComponent } from './packages-page/packages-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PostCardComponent } from './components/post-list/post-card/post-card.component';
+import { CreditsPageComponent } from './components/credits-page/credits-page.component';
+import { PackagesPageComponent } from './components/packages-page/packages-page.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,8 @@ import { PackagesPageComponent } from './packages-page/packages-page.component';
     PostCardComponent,
     CreditsPageComponent,
     PackagesPageComponent
+  ],
+  exports:[
   ],
   imports: [
     BrowserModule,

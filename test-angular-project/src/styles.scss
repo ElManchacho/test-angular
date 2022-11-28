@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-.global{
-    background: rgb(63,251,157);
-    background: linear-gradient(90deg, rgba(63,251,157,1) 0%, rgba(222,214,214,1) 100%);
-    color: whitesmoke;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+html{
+    height: 100%;
+    width: 100%;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    height:100%;
+}

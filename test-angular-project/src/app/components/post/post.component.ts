@@ -1,15 +1,16 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { PostService } from '../@shared/services/post/post.service';
-import { Post } from '../class/post';
+import { PostService } from '../../@shared/services/post/post.service';
+import { Post } from '../../class/post';
 
 @Component({
-  selector: 'app-post-card',
-  templateUrl: './post-card.component.html',
-  styleUrls: ['./post-card.component.scss']
+  selector: 'app-post',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.scss']
 })
-export class PostCardComponent implements OnInit, OnDestroy {
+
+export class PostComponent implements OnInit {
 
   private routeSub: Subscription;
 
@@ -37,5 +38,4 @@ export class PostCardComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.routeSub.unsubscribe();
   }
-
 }

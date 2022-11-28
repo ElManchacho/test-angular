@@ -4,7 +4,7 @@
         <table class="table-infos">
             <tr class="post-title">
                 <td colspan="2">
-                    <a class="post-title-style" href="/post/{{post.id}}">{{post.title}}</a>
+                    <a class="post-title-style" routerLink="/post/{{post.id}}">{{post.title}}</a>
                 </td>
             </tr>
             <tr>
@@ -23,26 +23,6 @@
                 </td>
             </tr>
         </table>
-
-        <!--
-        <div class="post-title">
-            <a>{{post.title}}</a>
-        </div>
-        
-        <hr class="post-separator"/>
-        <table class="table-infos">
-            <td class="post-main">
-                <a style="font-size: x-small;color: rgb(173, 168, 168);vertical-align: top;"> by </a><a class="post-creator">{{creator.pseudo}}</a>
-            </td>
-            <td right class="post-date">
-                <a>{{post.creationDate}}</a>
-            </td>
-        </table>
-        <div class="post-desc">
-            <a>{{post.text}}</a>
-        </div>
-        
-        -->
     </div>
 
 </div>
