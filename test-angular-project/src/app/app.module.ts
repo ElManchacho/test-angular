@@ -18,6 +18,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { PostCardComponent } from './components/post-list/post-card/post-card.component';
 import { CreditsPageComponent } from './components/credits-page/credits-page.component';
 import { PackagesPageComponent } from './components/packages-page/packages-page.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { PackagesPageComponent } from './components/packages-page/packages-page.
     PageNotFoundComponent,
     PostCardComponent,
     CreditsPageComponent,
-    PackagesPageComponent
+    PackagesPageComponent,
+    SignUpComponent,
+    LoginComponent
   ],
   exports:[
   ],

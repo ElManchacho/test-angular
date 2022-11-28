@@ -8,6 +8,8 @@ import { CreditsPageComponent } from './components/credits-page/credits-page.com
 import { PackagesPageComponent } from './components/packages-page/packages-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PostComponent } from './components/post/post.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,14 @@ const routes: Routes = [
   {
     path:'post/:id',
     component:PostComponent
+  },
+  {
+    path:'logIn',
+    component:LoginComponent
+  },
+  {
+    path:'signUp',
+    component:SignUpComponent
   },
   {
     path:'credits',
