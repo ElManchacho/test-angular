@@ -17,7 +17,7 @@ export class PostCardComponent implements OnInit {
   creator:User
 
   constructor(private userService:UserService) {
-    this.creator = {id:'NaN', name:'NaN', age:0,pseudo:'NaN', birthDate:new Date(), password:'NaN'}
+    this.creator = {id:'NaN', name:'NaN', age:0,pseudo:'NaN', email:'NaN', birthDate:new Date(), password:'NaN'}
   }
 
   ngOnInit(): void {

@@ -21,9 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.toggle('is-active');
         if ($target != null)
         {
-          //console.log("avant" + $target.classList.contains('is-active'));
           $target.classList.toggle('is-active');
-          //console.log("après" + $target.classList.contains('is-active'));
         }
 
       });

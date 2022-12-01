@@ -27,7 +27,6 @@ export class PostComponent implements OnInit {
     });
     this.getPostPromise = this.postService.getPostById(this.idPost)
     this.getPostPromise.then((value) => {
-      console.log(value)
       this.post = value
     })
   }
