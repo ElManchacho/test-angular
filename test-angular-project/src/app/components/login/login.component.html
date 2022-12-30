@@ -3,12 +3,12 @@
         <h1 class="title">Connexion</h1>
       </nav>
       
-    <form>
+    <form [formGroup]="postForm" (ngSubmit)="login()">
       <div class="field is-horizontal">
         <div class="field-body">
           <div class="field">
             <p class="control is-expanded has-icons-left">
-              <input type="text" class="input" placeholder="Login" #userName required>
+              <input type="text" class="input" placeholder="Login" formControlName="pseudo" #userName required>
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -21,7 +21,7 @@
         <div class="field-body">
           <div class="field">
             <p class="control is-expanded has-icons-left">
-              <input type="password" class="input" placeholder="Password" #userPassword required>
+              <input type="password" class="input" placeholder="Password" formControlName="password" #userPassword required>
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>

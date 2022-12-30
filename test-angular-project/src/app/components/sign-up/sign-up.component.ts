@@ -44,7 +44,7 @@ export class SignUpComponent implements OnInit {
     console.log(error)
   }
 
-  submitForm() {
+  signUp() {
     this.submitted = true;
     if (this.postForm.get('email')!.status == 'INVALID') {
       toast({
