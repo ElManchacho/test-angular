@@ -4,7 +4,6 @@ import { SignUpService } from 'src/app/@shared/services/signUp/sign-up.service';
 import { User } from 'src/app/class/user';
 import { Router } from '@angular/router';
 import { toast } from 'bulma-toast'
-import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-sign-up',
