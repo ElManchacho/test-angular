@@ -1,3 +1,53 @@
 <div class="main">
-    <p>login works!</p>
+    <nav>
+        <h1 class="title">Connexion</h1>
+      </nav>
+      
+    <form>
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <p class="control is-expanded has-icons-left">
+              <input type="text" class="input" placeholder="Login" #userName required>
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <p class="control is-expanded has-icons-left">
+              <input type="password" class="input" placeholder="Password" #userPassword required>
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+  
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+          
+            <p class="control">
+              <input type="button" class="button is-success is-fullwidth" value="Connexion" (click)="login()">
+  
+              <label class="checkbox">
+                <input type="checkbox">
+                Remember me
+              </label>
+            </p>
+            <br>
+            Vous n'avez pas de compte ? <a routerLink="/signUp">Inscrivez-vous</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  
 </div>

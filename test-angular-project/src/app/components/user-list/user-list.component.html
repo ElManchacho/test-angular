@@ -1,8 +1,8 @@
 <div class="main-content">
-    <form class="example-form" [formGroup]="postForm" (ngSubmit)="onSubmit()">
-        <mat-label>Search a pseudo ...</mat-label>
+    <form class="form" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+        <p label="searchtext">Search a pseudo ...</p>
         <br />
-        <input cklass="field" list="pseudos" type="text" placeholder="ex : mary123" formControlName="pseudo">
+        <input cklass="field" list="pseudos" type="text" class="searchInput" placeholder="ex : mary123" formControlName="pseudo">
         <datalist id="pseudos">
             <option *ngFor="let pseudo of userPseudosList" id="pseudo" value="{{pseudo}}">
         </datalist>
