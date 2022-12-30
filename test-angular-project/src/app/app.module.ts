@@ -9,7 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { PostListComponent } from './components/post-list/post-list.component';
-import { UserListComponent } from './components/user-list/user-list.component';
+import { UserSearchComponent } from './components/user-search/user-search.component';
 import { UserComponent } from './components/user/user.component';
 import { PostComponent } from './components/post/post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,7 +28,7 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     MainPageComponent,
     PostListComponent,
-    UserListComponent,
+    UserSearchComponent,
     UserComponent,
     PostComponent,
     PageNotFoundComponent,

@@ -4,10 +4,10 @@ import { UserService } from 'src/app/@shared/services/user/user.service';
 
 @Component({
   selector: 'app-user-list',
-  templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.scss']
+  templateUrl: './user-search.component.html',
+  styleUrls: ['./user-search.component.scss']
 })
-export class UserListComponent implements OnInit {
+export class UserSearchComponent implements OnInit {
 
   userPseudosList:string[];
 

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { PostListComponent } from './components/post-list/post-list.component';
-import { UserListComponent } from './components/user-list/user-list.component';
+import { UserSearchComponent } from './components/user-search/user-search.component';
 import { UserComponent } from './components/user/user.component';
 import { CreditsPageComponent } from './components/credits-page/credits-page.component';
 import { PackagesPageComponent } from './components/packages-page/packages-page.component';
@@ -25,8 +25,8 @@ const routes: Routes = [
     component:UserComponent
   },
   {
-    path:'userList',
-    component:UserListComponent
+    path:'userSearch',
+    component:UserSearchComponent
   },
   {
     path:'posts',
