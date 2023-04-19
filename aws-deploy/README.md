@@ -18,6 +18,8 @@ git clone --single-branch --branch aws-deploy  git@github.com:O-bing/o-bing-fron
 
 ## Step 2 : Deploy the AWS environnement
 
+Go into the "aws-deploy" folder
+
 Install the AWS dependencies for Python execution
 
 ```bash
@@ -33,6 +35,12 @@ pip install configparser
 ```
 
 Then launch the ```create-bucket.py``` script.
+
+## Step 3 : Deploy the Angular environnement
+
+Go into the "test-angular-project" folder
+
+Install the angular dependency and it's packages
 
 ```bash
 npm install -g @angular/cli
