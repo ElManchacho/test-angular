@@ -13,7 +13,7 @@ Go to the '.ssh/id_rsa.pub.' public SSH key file location
 ![image](https://user-images.githubusercontent.com/74706889/232481503-67759aff-f4a8-4126-984f-0913afcac5df.png)
 
 ```bash 
-git clone --single-branch --branch aws-deploy  git@github.com:O-bing/o-bing-front.git
+git clone --single-branch --branch aws-deploy  git@github.com:ElManchacho/test-angular.git
 ```
 
 ## Step 2 : Deploy the AWS environnement
