@@ -50,6 +50,8 @@ npm install -g @angular/cli
 npm install
 ```
 
+Now build the app and deploy it on the AWS S3 bucket you created
+
 ```bash
 ng build
 ```
