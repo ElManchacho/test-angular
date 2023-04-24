@@ -70,6 +70,14 @@ Then modify the properties as followed :
 
 ![image](https://user-images.githubusercontent.com/74706889/233933375-70a319f0-1ca0-48ac-840a-230ae4f5e224.png)
 
-Access the public URL that will now appear at the Deployment property location.
+Finally, access the "Authorization" tab, and the public access property :
 
-And well done ! You've got yourself a static AWS hosted Angular website !
+![image](https://user-images.githubusercontent.com/74706889/233935030-68ab05ab-93da-4629-9219-cf802bd97517.png)
+
+Modify it's values as followed (unpin all) :
+
+![image](https://user-images.githubusercontent.com/74706889/233935144-4631f9dc-3419-48c2-a59b-937200cf4734.png)
+
+You can now access the public URL that will now appear at the Deployment property location you modified earlier.
+
+### And well done ! You've got yourself a public static AWS hosted Angular website !
