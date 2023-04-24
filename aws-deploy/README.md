@@ -60,7 +60,7 @@ ng build
 aws s3 sync ~/environment/test-angular/test-angular-project/dist/test-angular-project/. s3://aws-test-bingo-angular/
 ```
 
-## Step 4 : make your S3 Angular builded app a static website
+## Step 4 : make your S3 Angular builded app a public static website
 
 Go into the "Properties" tab and scroll down to the "Deployment" option.
 
@@ -70,13 +70,23 @@ Then modify the properties as followed :
 
 ![image](https://user-images.githubusercontent.com/74706889/233933375-70a319f0-1ca0-48ac-840a-230ae4f5e224.png)
 
-Finally, access the "Authorization" tab, and the public access property :
+Finally, access the "Authorization" tab.
+
+Public access property :
 
 ![image](https://user-images.githubusercontent.com/74706889/233935030-68ab05ab-93da-4629-9219-cf802bd97517.png)
 
 Modify it's values as followed (unpin all) :
 
 ![image](https://user-images.githubusercontent.com/74706889/233935144-4631f9dc-3419-48c2-a59b-937200cf4734.png)
+
+Bucket policy property :
+
+![image](https://user-images.githubusercontent.com/74706889/233935797-d1cc165b-d0c2-4e1f-9355-dc6ede6ccba1.png)
+
+Modify it's value with the content of the ```policy.json``` file, in the ```aws-deploy/Specs``` folder, as followed :
+
+![image](https://user-images.githubusercontent.com/74706889/233936238-56b9bae1-265e-41f6-9f56-3c4707c10587.png)
 
 You can now access the public URL that will now appear at the Deployment property location you modified earlier.
 
