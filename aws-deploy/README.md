@@ -59,3 +59,17 @@ ng build
 ```bash
 aws s3 sync ~/environment/test-angular/test-angular-project/dist/test-angular-project/. s3://aws-test-bingo-angular/
 ```
+
+## Step 4 : make your S3 Angular builded app a static website
+
+Go into the "Properties" tab and scroll down to the "Deployment" option.
+
+![image](https://user-images.githubusercontent.com/74706889/233933563-f8413f72-53cc-471c-bc3e-fd52a69fb64f.png)
+
+Then modify the properties as followed :
+
+![image](https://user-images.githubusercontent.com/74706889/233933375-70a319f0-1ca0-48ac-840a-230ae4f5e224.png)
+
+Access the public URL that will now appear at the Deployment property location.
+
+And well done ! You've got yourself a static AWS hosted Angular website !
