@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,12 +8,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  postForm: FormGroup
+  postForm: UntypedFormGroup
 
   constructor() {
-    this.postForm = new FormGroup({
-      login: new FormControl("", Validators.required),
-      password: new FormControl("", Validators.required)
+    this.postForm = new UntypedFormGroup({
+      login: new UntypedFormControl("", Validators.required),
+      password: new UntypedFormControl("", Validators.required)
     });
   }
 
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   login():void{
-    
+    console.log("Trying to log in with following :", this.postForm.controls['login'].value, this.postForm.controls['password'].value)
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { SignUpService } from 'src/app/@shared/services/signUp/sign-up.service';
 import { User } from 'src/app/class/user';
 import { Router } from '@angular/router';
@@ -14,24 +14,24 @@ export class SignUpComponent implements OnInit {
 
   @Output() onSubmit: EventEmitter<User>;
 
-  postForm: FormGroup
+  postForm: UntypedFormGroup
 
   submitted = false;
 
   baseImage!: File;
 
   constructor(public signUpService: SignUpService, public router: Router) {
-    this.postForm = new FormGroup({
-      pseudo: new FormControl("", Validators.required),
-      email: new FormControl("",
+    this.postForm = new UntypedFormGroup({
+      pseudo: new UntypedFormControl("", Validators.required),
+      email: new UntypedFormControl("",
         [
           Validators.required,
           Validators.email,
           Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')
         ]
       ),
-      password: new FormControl("", Validators.required),
-      checkPassword: new FormControl("", Validators.required)
+      password: new UntypedFormControl("", Validators.required),
+      checkPassword: new UntypedFormControl("", Validators.required)
     });
     this.onSubmit = new EventEmitter();
   }

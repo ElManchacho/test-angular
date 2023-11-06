@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { UserService } from 'src/app/@shared/services/user/user.service';
 
 @Component({
@@ -13,8 +13,8 @@ export class UserSearchComponent implements OnInit {
 
   searchedUser:any;
 
-  postForm = new FormGroup({
-    pseudo: new FormControl("", Validators.required)
+  postForm = new UntypedFormGroup({
+    pseudo: new UntypedFormControl("", Validators.required)
   });
 
   getUsersPseudoPromise:Promise<string[]> | undefined
